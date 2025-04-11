@@ -3,7 +3,7 @@ import React from 'react'
 const Header = ({theme, toggleTheme}) => {
   return (
     <header>
-        <h1>App Theme:</h1>
+        <h1>App Theme: {theme}</h1>
         <button onClick={toggleTheme}>Toggle Theme</button>
     </header>
   )
