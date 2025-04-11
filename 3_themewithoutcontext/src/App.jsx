@@ -1,14 +1,22 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import Content from './components/Content'
+import Header from './components/Header'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [theme, setTheme] = useState("light")
 
+  const toggleTheme = ()=>{
+    setTheme(prevTheme => (prevTheme === "light" ? "dark" : "light"))
+  }
   return (
     <>
-      <h1>Dark/Light Theme</h1>
+      <div className={`app theme`}>
+        <Header theme={theme} toggleTheme={toggleTheme}></Header>
+        <Content theme={theme}></Content>
+      </div>
     </>
   )
 }
