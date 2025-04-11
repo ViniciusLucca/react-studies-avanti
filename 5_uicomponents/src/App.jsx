@@ -7,7 +7,16 @@ import './App.css'
 function App() {
   return (
     <>
-    <h1>Theme Dark/Light</h1>
+    <div>
+      <h1>UI Components</h1>
+      <Accordeon></Accordeon>
+      <hr />
+      <ContactForm></ContactForm>
+      <hr />
+      <Clock></Clock>
+      <hr />
+      <Modal></Modal>
+    </div>
     </>
   )
 }
