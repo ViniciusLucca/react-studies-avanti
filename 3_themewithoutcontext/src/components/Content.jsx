@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Content = () => {
+const Content = ({theme}) => {
   return (
-    <div>Content</div>
+    <main>
+        <p>The current theme is {theme}</p>
+    </main>
   )
 }
 
